@@ -1,6 +1,6 @@
 # Job Portal Frontend
 
-React + Vite JavaScript boilerplate for the Software Engineering AI-powered job portal. The official starter screen is retained; product features are not implemented yet.
+React + Vite frontend for Matchwise, the Software Engineering AI-powered job portal. Includes landing, login, and registration screens with client-side validation. Authentication currently uses simulated responses pending backend integration.
 
 ## Setup
 

@@ -1,0 +1,43 @@
+.score-ring-wrap {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.score-ring-svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.score-ring-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  text-align: center;
+  line-height: 1;
+}
+
+.score-ring-number {
+  font-family: var(--font-family);
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--ink);
+  letter-spacing: -0.02em;
+}
+
+.score-ring-lg .score-ring-number {
+  font-size: 20px;
+}
+
+.score-ring-unit {
+  font-family: var(--font-family);
+  font-size: 7px;
+  font-weight: 500;
+  color: var(--muted);
+  margin-top: 1px;
+}

@@ -1,0 +1,32 @@
+.pill {
+  display: inline-flex;
+  align-items: center;
+  height: 33px;
+  padding: 0 12px;
+  gap: 8px;
+  background-color: #FFFFFF;
+  border: 1px solid var(--line);
+  border-radius: 9999px;
+  box-sizing: border-box;
+  width: fit-content;
+}
+
+.pill-dot {
+  width: 8px;
+  height: 8px;
+  background-color: var(--olive);
+  border-radius: 50%;
+  box-shadow: 0 0 0 3px rgba(111, 155, 47, 0.22);
+  flex-shrink: 0;
+}
+
+.pill-text {
+  font-family: var(--font-family);
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--ink);
+  line-height: 1;
+  white-space: nowrap;
+}

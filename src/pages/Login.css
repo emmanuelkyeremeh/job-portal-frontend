@@ -1,0 +1,232 @@
+/* Opportunity Hub Card */
+.hub-card {
+  width: 500px;
+  height: 254px;
+  background-color: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 20px;
+  padding: 21px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.hub-header {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.hub-avatar {
+  width: 38px;
+  height: 38px;
+  border-radius: 10px;
+  background-color: var(--lime);
+  color: #17332A;
+  font-family: var(--font-family);
+  font-size: 16px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-right: 12px;
+}
+
+.hub-title-col {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.hub-title {
+  font-family: var(--font-family);
+  font-size: 13px;
+  font-weight: 600;
+  color: #FFFFFF;
+  line-height: 1.2;
+}
+
+.hub-updated {
+  font-family: var(--font-family);
+  font-size: 9px;
+  color: var(--on-dark-faint);
+  line-height: 1.2;
+}
+
+.hub-status-ring {
+  margin-left: auto;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: rgba(220, 248, 98, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hub-status-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: var(--lime);
+}
+
+.hub-divider {
+  width: 100%;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.10);
+}
+
+.hub-stats {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 4px;
+}
+
+.hub-stat-col {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  flex: 1;
+}
+
+.hub-stat-num {
+  font-family: var(--font-family);
+  font-size: 24px;
+  font-weight: 500;
+  color: var(--lime-text);
+  line-height: 1;
+}
+
+.hub-stat-label {
+  font-family: var(--font-family);
+  font-size: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--on-dark-faint);
+  line-height: 1;
+}
+
+.hub-stat-sep {
+  width: 1px;
+  height: 38px;
+  background-color: rgba(255, 255, 255, 0.10);
+  margin: 0 16px;
+}
+
+.hub-ready-strip {
+  height: 54px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.07);
+  display: flex;
+  align-items: center;
+  padding: 0 12px;
+  gap: 12px;
+}
+
+.hub-check-box {
+  width: 30px;
+  height: 30px;
+  border-radius: 8px;
+  background-color: var(--lime);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.hub-ready-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.hub-ready-title {
+  font-family: var(--font-family);
+  font-size: 11px;
+  font-weight: 700;
+  color: #FFFFFF;
+  line-height: 1.2;
+}
+
+.hub-ready-sub {
+  font-family: var(--font-family);
+  font-size: 8px;
+  color: var(--on-dark-faint);
+  line-height: 1.2;
+}
+
+/* Right Form Elements */
+.login-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-field-row {
+  margin-bottom: 17px;
+}
+
+.login-actions-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1px;
+  margin-bottom: 27px;
+}
+
+.forgot-password-link {
+  font-family: var(--font-family);
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--link);
+  text-decoration: none;
+  transition: opacity 0.15s ease;
+}
+
+.forgot-password-link:hover {
+  text-decoration: underline;
+}
+
+.login-submit-wrap {
+  width: 100%;
+  margin-bottom: 34px;
+}
+
+.login-bottom-switch {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+
+.switch-text {
+  font-family: var(--font-family);
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.switch-link {
+  font-family: var(--font-family);
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--link);
+  text-decoration: none;
+}
+
+.switch-link:hover {
+  text-decoration: underline;
+}
+
+
+.auth-form-error {
+  font-family: var(--font-family);
+  font-size: 12px;
+  color: var(--error);
+  text-align: center;
+  margin-top: -20px;
+  margin-bottom: 20px;
+  line-height: 1.3;
+}

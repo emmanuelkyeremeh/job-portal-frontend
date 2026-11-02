@@ -1,0 +1,77 @@
+.logo-link {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.logo-container {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  user-select: none;
+}
+
+.logo-icon-wrap {
+  position: relative;
+  width: 40px;
+  height: 40px;
+}
+
+.logo-square {
+  width: 40px;
+  height: 40px;
+  background-color: var(--lime);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-glyph {
+  display: block;
+}
+
+.logo-badge-dot {
+  position: absolute;
+  top: -2px;
+  right: -3px;
+  width: 6px;
+  height: 6px;
+  background-color: #FFFFFF;
+  border-radius: 50%;
+  box-shadow: 0 0 0 1.5px rgba(23, 51, 42, 0.2);
+}
+
+.logo-dark .logo-badge-dot {
+  box-shadow: 0 0 0 1.5px rgba(255, 255, 255, 0.4);
+}
+
+.logo-text {
+  font-family: var(--font-family);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  display: flex;
+  align-items: baseline;
+}
+
+.logo-large .logo-text {
+  font-size: 22px;
+}
+
+.logo-light .logo-match {
+  color: var(--ink);
+}
+
+.logo-light .logo-wise {
+  color: var(--olive);
+}
+
+.logo-dark .logo-match {
+  color: #FFFFFF;
+}
+
+.logo-dark .logo-wise {
+  color: var(--olive-on-dark);
+}

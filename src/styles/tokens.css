@@ -1,0 +1,35 @@
+:root {
+  /* Colors */
+  --forest: #1A3427;
+  --forest-register: #243C31;
+  --forest-button: #17332A;
+  --forest-card: rgba(255, 255, 255, 0.06);
+  --forest-card-border: rgba(255, 255, 255, 0.12);
+  --lime: #DCF862;
+  --lime-text: #D9F55B;
+  --lime-glow: rgba(205, 240, 70, 0.35);
+  --olive: #6F9B2F;
+  --olive-on-dark: #8AB345;
+  --link: #4B7F1D;
+  --ink: #10261B;
+  --muted: #64706A;
+  --muted-light: #8A948E;
+  --placeholder: #9CA59F;
+  --line: #DDE2DB;
+  --input-bg: #FAFAF8;
+  --page: #F7F8F3;
+  --panel: #F3F5F0;
+  --mint: #E3EEDF;
+  --lavender: #E6E4F3;
+  --on-dark-text: #F2F5EE;
+  --on-dark-muted: #B5C4BA;
+  --on-dark-faint: #9FB3A8;
+  --error: #B3261E;
+
+  /* Typography */
+  --font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+
+  /* Shadows */
+  --shadow-card: 0 8px 24px rgba(20, 40, 30, 0.10);
+  --shadow-lime: 0 10px 24px var(--lime-glow);
+}

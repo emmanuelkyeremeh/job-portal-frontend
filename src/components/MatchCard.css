@@ -1,0 +1,206 @@
+.match-card {
+  background-color: #FFFFFF;
+  border: 1px solid #E4E8E1;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(20, 40, 30, 0.10);
+  overflow: hidden;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+.match-card-front {
+  width: 568px;
+}
+
+.card-top-bar {
+  height: 46px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  border-bottom: 1px solid #F0F3EE;
+  flex-shrink: 0;
+}
+
+.top-dots {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+
+.top-dots .dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #CFD5CF;
+}
+
+.top-label {
+  font-family: var(--font-family);
+  font-size: 9px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--muted);
+}
+
+.top-spacer {
+  width: 36px;
+}
+
+.card-header {
+  padding: 18px 20px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.company-logo {
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.logo-pixelcraft {
+  background-color: #121A2E;
+}
+
+.logo-apex {
+  background-color: #151D28;
+}
+
+.logo-orbit {
+  width: 48px;
+  height: 48px;
+  background: linear-gradient(135deg, #7B6CF0 0%, #9A8CFF 100%);
+}
+
+.header-info {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.company-name {
+  font-family: var(--font-family);
+  font-size: 9px;
+  color: var(--muted);
+  font-weight: 500;
+  line-height: 1;
+}
+
+.job-title {
+  font-family: var(--font-family);
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--ink);
+  line-height: 1.2;
+}
+
+.match-card-front .job-title {
+  font-size: 18px;
+}
+
+.job-meta {
+  font-family: var(--font-family);
+  font-size: 9px;
+  color: var(--muted);
+  line-height: 1;
+}
+
+.header-score {
+  flex-shrink: 0;
+}
+
+.card-body {
+  background-color: var(--panel);
+  border-top: 1px solid #EAEFE7;
+  padding: 16px 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  flex: 1;
+}
+
+.sub-card {
+  background-color: #FFFFFF;
+  border: 1px solid #E4E8E1;
+  border-radius: 10px;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.sub-title {
+  font-family: var(--font-family);
+  font-size: 9px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--link);
+  margin-bottom: 10px;
+}
+
+.sub-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex: 1;
+}
+
+.sub-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.item-icon {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.check-icon-wrap {
+  background-color: #E2F2E4;
+}
+
+.plus-icon-wrap {
+  background-color: #EDF1EE;
+}
+
+.item-text {
+  font-family: var(--font-family);
+  font-size: 9px;
+  color: var(--ink);
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.view-full-wrap {
+  margin-top: 10px;
+}
+
+.view-full-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-family: var(--font-family);
+  font-size: 8px;
+  font-weight: 700;
+  color: var(--link);
+  cursor: pointer;
+  text-decoration: none;
+}

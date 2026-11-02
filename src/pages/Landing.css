@@ -1,0 +1,577 @@
+.landing-page {
+  width: 100%;
+  max-width: 1920px;
+  min-height: 1600px;
+  margin: 0 auto;
+  background-color: var(--page);
+  position: relative;
+  overflow-x: hidden;
+}
+
+/* ==========================================================================
+   HEADER
+   ========================================================================== */
+.landing-header {
+  width: 100%;
+  height: 84px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.header-inner {
+  width: 100%;
+  max-width: 1493px;
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-logo {
+  flex-shrink: 0;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+  gap: 39px;
+  margin-left: 200px;
+}
+
+.nav-link {
+  font-family: var(--font-family);
+  font-size: 14px;
+  font-weight: 500;
+  color: #2A3A30;
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+
+.nav-link:hover {
+  color: var(--ink);
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.login-nav-link {
+  font-family: var(--font-family);
+  font-size: 15px;
+  font-weight: 500;
+  color: #2A3A30;
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+
+.login-nav-link:hover {
+  color: var(--ink);
+}
+
+.header-get-started {
+  width: 128px;
+  height: 44px;
+  border-radius: 10px;
+}
+
+/* ==========================================================================
+   HERO SECTION
+   ========================================================================== */
+.landing-hero-section {
+  width: 100%;
+  max-width: 1493px;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  padding-top: 140px;
+  min-height: 940px;
+}
+
+/* Hero Left Column */
+.hero-left-col {
+  width: 500px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  z-index: 5;
+}
+
+.hero-pill-wrap {
+  margin-bottom: 24px;
+}
+
+.hero-h1 {
+  font-family: var(--font-family);
+  font-size: 71px;
+  line-height: 74px;
+  font-weight: 500;
+  letter-spacing: -0.008em;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 28px;
+}
+
+.hero-h1-dark {
+  color: var(--ink);
+  width: 488px;
+}
+
+.hero-h1-green {
+  color: var(--olive);
+}
+
+.hero-btn-wrap {
+  margin-bottom: 40px;
+}
+
+.hero-find-btn {
+  width: 212px;
+  height: 53px;
+  border-radius: 8px;
+}
+
+/* Feature Tiles */
+.hero-tiles-list {
+  display: flex;
+  flex-direction: column;
+  gap: 27px;
+}
+
+.hero-tile-row {
+  display: flex;
+  align-items: center;
+  gap: 23px;
+}
+
+.hero-tile {
+  width: 77px;
+  height: 77px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.tile-lime {
+  background-color: var(--lime);
+}
+
+.tile-mint {
+  background-color: var(--mint);
+}
+
+.tile-lavender {
+  background-color: var(--lavender);
+}
+
+.tile-label {
+  font-family: var(--font-family);
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--ink);
+  line-height: 1.2;
+}
+
+/* Hero Right Column: Card Composition */
+.hero-right-col {
+  flex: 1;
+  position: relative;
+  min-height: 800px;
+}
+
+/* Background Disc */
+.hero-backdrop-disc {
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+  background-color: rgba(220, 248, 98, 0.22);
+  top: 70px;
+  left: 230px;
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Card Wrappers */
+.card-wrapper {
+  position: absolute;
+  transition: transform 0.2s ease;
+}
+
+/* Card A: Back Left */
+.card-a-wrap {
+  top: 25px;
+  left: -20px;
+  width: 490px;
+  transform: rotate(-1.3deg);
+  z-index: 2;
+}
+
+/* Card B: Back Right with 3D perspective */
+.card-b-wrap {
+  top: 25px;
+  left: 360px;
+  width: 510px;
+  transform-origin: top left;
+  transform: perspective(1200px) rotateY(-11deg) rotateX(4deg) rotateZ(3.2deg);
+  z-index: 3;
+}
+
+/* Card C: Front Center */
+.card-c-wrap {
+  top: 310px;
+  left: 90px;
+  width: 568px;
+  z-index: 10;
+}
+
+/* Floating Badges */
+.f-badge {
+  position: absolute;
+  z-index: 20;
+}
+
+.badge-top-left {
+  top: -30px;
+  left: 215px;
+}
+
+.badge-top-right {
+  top: 42px;
+  right: -14px;
+}
+
+.badge-mid-left {
+  top: 325px;
+  left: -120px;
+}
+
+.badge-bottom-right {
+  top: 595px;
+  left: 560px;
+}
+
+/* ==========================================================================
+   DARK SECTION
+   ========================================================================== */
+.landing-dark-section {
+  width: 100%;
+  max-width: 1184px;
+  height: 413px;
+  margin: 70px auto 70px;
+  background-color: var(--forest);
+  border-radius: 32px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.dark-inner {
+  width: 100%;
+  padding: 0 54px 0 75px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.dark-left-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.dark-eyebrow {
+  font-family: var(--font-family);
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--lime-text);
+  margin-bottom: 12px;
+}
+
+.dark-h2 {
+  font-family: var(--font-family);
+  font-size: 50px;
+  line-height: 52px;
+  font-weight: 500;
+  letter-spacing: -0.020em;
+  color: #FFFFFF;
+  width: 517px;
+  margin-bottom: 14px;
+}
+
+.dark-paragraph {
+  font-family: var(--font-family);
+  font-size: 16px;
+  line-height: 26px;
+  color: var(--on-dark-muted);
+  margin-bottom: 24px;
+}
+
+.dark-checklist {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.dark-check-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-family: var(--font-family);
+  font-size: 15px;
+  color: #E4ECE6;
+  line-height: 1;
+}
+
+.dark-check-circle {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: var(--lime);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+/* Match Quality Card */
+.dark-right-col {
+  flex-shrink: 0;
+}
+
+.match-quality-card {
+  width: 419px;
+  height: 241px;
+  background-color: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  padding: 36px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.quality-label {
+  font-family: var(--font-family);
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--on-dark-faint);
+  line-height: 1;
+}
+
+.quality-score {
+  font-family: var(--font-family);
+  font-size: 68px;
+  line-height: 1;
+  font-weight: 500;
+  letter-spacing: -0.045em;
+  color: var(--lime-text);
+}
+
+.quality-bar-track {
+  width: 100%;
+  height: 6px;
+  border-radius: 999px;
+  background-color: rgba(255, 255, 255, 0.12);
+  overflow: hidden;
+}
+
+.quality-bar-fill {
+  height: 100%;
+  border-radius: 999px;
+  background-color: var(--lime);
+}
+
+.quality-caption {
+  font-family: var(--font-family);
+  font-size: 12px;
+  color: var(--on-dark-muted);
+  line-height: 1.3;
+}
+
+/* ==========================================================================
+   FOOTER
+   ========================================================================== */
+.landing-footer {
+  width: 100%;
+  position: relative;
+  padding-bottom: 54px;
+}
+
+.footer-line {
+  width: 100%;
+  height: 1px;
+  background-color: var(--line);
+  margin-bottom: 44px;
+}
+
+.footer-inner {
+  width: 100%;
+  max-width: 1184px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-logo {
+  flex-shrink: 0;
+}
+
+.footer-center-text {
+  font-family: var(--font-family);
+  font-size: 13px;
+  line-height: 19px;
+  color: #6E7A73;
+  text-align: center;
+  max-width: 440px;
+}
+
+.footer-action {
+  flex-shrink: 0;
+}
+
+.footer-btn {
+  height: 44px;
+  padding: 0 20px;
+  border-radius: 10px;
+}
+
+/* ==========================================================================
+   RESPONSIVE (1440px and mobile 375px)
+   ========================================================================== */
+@media (max-width: 1600px) and (min-width: 1280px) {
+  .header-inner {
+    padding: 0 40px;
+  }
+  .landing-hero-section {
+    padding: 120px 40px 0;
+  }
+  .hero-right-col {
+    transform: scale(0.82);
+    transform-origin: top left;
+  }
+  .landing-dark-section {
+    max-width: 90%;
+  }
+  .footer-inner {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 1279px) {
+  .landing-header {
+    height: auto;
+    padding: 20px;
+  }
+  .header-inner {
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+  .header-nav {
+    display: none;
+  }
+  .landing-hero-section {
+    flex-direction: column;
+    padding: 40px 20px;
+    gap: 40px;
+    min-height: auto;
+  }
+  .hero-left-col {
+    width: 100%;
+  }
+  .hero-h1-dark {
+    width: 100%;
+  }
+  .hero-right-col {
+    width: 100%;
+    min-height: 520px;
+    overflow: hidden;
+    transform: scale(0.68);
+    transform-origin: top left;
+  }
+  .landing-dark-section {
+    height: auto;
+    margin: 40px 20px;
+    padding: 30px 20px;
+  }
+  .dark-inner {
+    flex-direction: column;
+    padding: 0;
+    gap: 32px;
+  }
+  .dark-h2 {
+    width: 100%;
+  }
+  .match-quality-card {
+    width: 100%;
+  }
+  .footer-inner {
+    flex-direction: column;
+    gap: 24px;
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .landing-header {
+    padding: 16px;
+  }
+  .landing-hero-section {
+    padding: 24px 16px;
+  }
+  .hero-h1 {
+    font-size: 42px;
+    line-height: 46px;
+  }
+  .hero-find-btn {
+    width: 100%;
+  }
+  .hero-tile-row {
+    gap: 16px;
+  }
+  .hero-tile {
+    width: 64px;
+    height: 64px;
+  }
+  .tile-label {
+    font-size: 17px;
+  }
+  .hero-right-col {
+    transform: scale(0.52);
+    transform-origin: top left;
+    min-height: 480px;
+    width: 190%;
+  }
+  .landing-dark-section {
+    margin: 24px 12px;
+    padding: 24px 16px;
+    border-radius: 20px;
+  }
+  .dark-h2 {
+    font-size: 32px;
+    line-height: 36px;
+  }
+  .dark-inner {
+    padding: 0;
+  }
+  .match-quality-card {
+    padding: 24px;
+    height: auto;
+    gap: 16px;
+  }
+  .footer-btn {
+    width: 100%;
+  }
+}
